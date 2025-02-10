@@ -1,7 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
     <meta charset="uta8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfoliyo</title>
+    <style>
+        body{
+            margin: 0%;
+        }
+        .main1 h1{
+            margin: 0px;
+        }
+        .main1{
+            width: 100vw;
+            height: 10vh;
+            background-color: rgb(255, 238, 0);
+            position: relative;
+        }
+        .main11{
+            position: absolute;
+            top: 50%;
+            left: 25%;
+            color: black;
+            font-size: xx-large;
+            transform: translate(-50%,-50%); /*to center the top */
+        }
+        .main2{
+            width: 100vw;
+            height: 80vh; 
+            position: relative;
+        }
+        #im1{
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        .main21{
+            position:absolute;
+            top: 20%;
+            left: 10%;
+            
+        }
+        .main22{
+            position: absolute;
+            top: 55%;
+            left: 10%;
+        }
+        .main23 img{
+            position: absolute;
+            top: 10%;
+            right: 5%;
+            width: 50%;
+            height: 80%;
+            display: block;
+        }
+        .main24{
+            position: absolute;
+            top: 20%;
+            right: 20%;
+            display: none;
+           
+        }
+        .main3{
+            width: 100vw;
+            height: 10vh;
+            background-color: rgb(255, 238, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="main1">
+        <div class="main11">
+            <h1>Mathan</h1>
 
+        </div>
+    </div>
+    <div class="main2">
+        <img id="im1"  src="https://img.freepik.com/free-photo/flat-lay-blue-monday-paper-with-copy-space_23-2148756188.jpg" alt="">
+        <div class="main21">
+            <h1 id="line1">Hi there,</h1>
+            <h2 id="line2">This is Mathan</h2>
+            <h2 id="line3">Web Developer</h2>
+        </div>
+        <div class="main22">
+            <button id="b1">About</button>
+        </div>
+        <div class="main23">
+            <img  id="view" src="https://png.pngtree.com/png-clipart/20231018/original/pngtree-business-portfolio-3d-character-illustration-png-image_13355679.png" alt="">
+        </div>
+        <div class="main24" id="hidden">
+            <h1>I am Here</h1>
+        </div>
+    </div>
+    <div class="main3"></div>
+    <script>
+        document.getElementById("b1").onclick = function(){
+            document.getElementById("line1").innerHTML="Fresher";
+            document.getElementById("line2").innerHTML="In Web Developer";
+            document.getElementById("line3").innerHTML="Completed BE-ECE";
+            document.getElementById("view").style.display="none";
+            document.getElementById("hidden").style.display="block";
+        }
+    </script>
+</body>
 </html>
